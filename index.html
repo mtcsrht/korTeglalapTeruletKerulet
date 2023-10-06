@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kör Téglalap Terület Kerület</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="half-round"></div>
+    <div class="box">
+      <div class="szamolok">
+        <div class="kor">
+          <h2>Kör</h2>
+          <div class="wrapper">
+            <div class="lil-wrapper">
+              <label for="sugar">Kör sugara:</label>
+              <input id="sugar" type="number" min="0" value="0" />
+            </div>
+            <div class="lil-wrapper">
+              <label for="kerulet">Kör kerülete:</label>
+              <input id="kerulet" disabled type="number" min="0"  value="0"/>
+            </div>
+            <div class="lil-wrapper">
+              <label for="terulet">Kör területe</label>
+              <input id="terulet" disabled type="number" min="0"  value="0"/>
+            </div>
+          </div>
+        </div>
+        <div class="teglalap">
+          <h2>Téglalap</h2>
+          <div class="wrapper">
+            <div class="lil-wrapper">
+              <label for="">Oldal hossza: </label>
+              <input id="hosszusag" type="number" min="0" value="0"/>
+            </div>
+            <div class="lil-wrapper">
+              <label for="">Oldal szélessége: </label>
+              <input id="szelesseg" type="number" min="0" value="0"/>
+            </div>
+            <div class="lil-wrapper">
+              <label for="">Terület</label>
+              <input id ="ngyztTerulet" type="number" disabled min="0" value="0"/>
+            </div>
+            <div class="lil-wrapper">
+              <label for="">Kerület</label>
+              <input id="ngyztKerulet" type="number" disabled min="0" value="0"/>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animaciok">
+        <div id="round-shape" class="round-shape"></div>
+        <div id="box-shape" class="box-shape"></div>
+      </div>
+    </div>
+    <div class="half-round"></div>
+  </body>
+</html>

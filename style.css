@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    background-image: linear-gradient(white, gray, black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  /*put content to middle of the screen*/
+  min-height: 100vh;
+  /*make sure the content is not less than the screen height*/
+  background-color: #f1f1f1;
+  /*background color*/
+  font-family: "Poppins", sans-serif;
+  /*font family*/
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  padding: 30px;
+  width: 700px;
+  height: 400px;
+  background-color: gray;
+  border-radius: 10px;
+  box-shadow: 10px 10px 10px black;
+}
+.box h2 {
+  color: black;
+  margin-bottom: 20px;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+}
+.wrapper label {
+  display: inline-block;
+  margin-right: 20px;
+  /*inputs are not in the same line*/
+  width: 130px;
+  /*make sure the label is not too long*/
+}
+
+.szamolok{
+    width: 50%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.animaciok{
+    width: 50%;
+    display: inherit;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.round-shape{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border-radius: 50%;
+    animation-name:  circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: translateX(30px);
+}
+
+.box-shape{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    animation-name: box;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform: translateX(-30px);
+}
+
+/* circle*/
+.half-round {
+  top: 0;
+  right: 0;
+  width: 200px;
+  height: 400px;
+  background-color: black;
+  border-top-right-radius: 50vh;
+  border-bottom-right-radius: 50vh;
+}
+
+.half-round:last-of-type{
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 50vh;
+  border-bottom-left-radius: 50vh;
+}
+
+
+@keyframes box {
+  0% {
+    transform: translateX(-30px);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(-30px);
+  }
+  
+}
+
+@keyframes circle{
+  0% {
+    transform: translateX(30px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(30px);
+  }
+  
+}
